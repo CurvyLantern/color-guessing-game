@@ -11,7 +11,6 @@ function ColorGame(props: {
 
   useEffect(() => {
     let id = 0;
-    console.log('1');
     if (guessedColor && guessedColor === props.correctColor) {
       console.log('2');
       console.log('3');
@@ -42,6 +41,7 @@ function ColorGame(props: {
         })}
       </div>
 
+      {!guessedColor && <div className="text-center">Nothing is selected</div>}
       {guessedColor && guessedColor === props.correctColor && (
         <div className="text-green-500 text-center">
           Congrats! you are correct

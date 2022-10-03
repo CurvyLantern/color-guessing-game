@@ -4,7 +4,7 @@ import  ColorGame from './ColorGame.tsx';
 
 
 function randHex() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+  return "#000000".replace(/0/g,() => Math.floor(Math.random()*16).toString(16));
 }
 function randElofArr<T>(arr: T[]) {
   return arr[Math.floor(Math.random() * arr.length)];

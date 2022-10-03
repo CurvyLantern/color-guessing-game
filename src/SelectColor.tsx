@@ -7,11 +7,11 @@ type Props = {
 };
 
 function SelectColor(props: Props) {
-  const [disabled, setDisable] = useState(false);
+  const [disabled, setDisable] = useState(() => false);
 
   useEffect(() => {
     setDisable(false)
-  }, [disabled]);
+  }, []);
 
   return (
     <button
