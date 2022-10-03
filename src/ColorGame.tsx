@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import SelectColor from './SelectColor.tsx';
+import SelectColor from './SelectColor';
 
 function ColorGame(props: {
   correctColor: string;

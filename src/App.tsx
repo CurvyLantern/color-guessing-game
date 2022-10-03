@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import  ColorGame from './ColorGame.tsx';
+import  ColorGame from './ColorGame';
 
 
 function randHex() {
